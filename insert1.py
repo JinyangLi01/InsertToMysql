@@ -7,14 +7,14 @@ db = pymysql.connect(host='localhost', port=3306,
 
 cursor = db.cursor()
 
-sql = "INSERT INTO basic(ID, Age, Name, c4, c5, c6, c7, c8, c9, c10) \
+sql = "INSERT INTO goquery100(ID, Age, Name, c4, c5, c6, c7, c8, c9, c10) \
     VALUES (%s,%s,%s, %s,%s,%s, %s,%s,%s, %s)"
 T = []
 
 def string_generator(size=6, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for _ in range(size))
 
-for i in range(1, 11):
+for i in range(1, 100001):
     age = random.randint(1,50)
     name = ''.join(random.sample(string.ascii_letters + string.digits, random.randint(1, 30)))
     c4 = ''.join(random.sample(string.ascii_letters + string.digits, random.randint(1, 30)))
