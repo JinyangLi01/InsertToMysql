@@ -8,7 +8,7 @@ cursor = db.cursor()
 sql = "INSERT INTO fixed1(ID, Age, Name) VALUES (%s,%s,%s)"
 T = []
 
-for i in range(1, 1000001):
+for i in range(1, 100001):
     T.append((i, 20, 'Name'))
 
 
