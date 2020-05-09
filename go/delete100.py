@@ -3,7 +3,7 @@ import string
 import random
 
 db = pymysql.connect(host='localhost', port=3306,
-                     user='root', passwd='ljy19980228', db='end2end', charset='utf8')
+                     user='root', passwd='greeN7^Tr33', db='end2end', charset='utf8')
 
 cursor = db.cursor()
 
