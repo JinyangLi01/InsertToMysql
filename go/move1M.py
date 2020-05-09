@@ -3,11 +3,11 @@ import string
 import random
 
 db = pymysql.connect(host='localhost', port=3306,
-                     user='root', passwd='greeN7^Tr33', db='end2end', charset='utf8')
+                    user='root', passwd='greeN7^Tr33', db='end2end', charset='utf8')
 
 cursor = db.cursor()
 
-sql = "INSERT INTO insert1M(ID, Age, Name, c4, c5, c6, c7, c8, c9, c10) VALUES (%s,%s,%s, %s,%s,%s, %s,%s,%s, %s)"
+sql = "INSERT INTO gomove1M(ID, Age, Name, c4, c5, c6, c7, c8, c9, c10) VALUES (%s,%s,%s, %s,%s,%s, %s,%s,%s, %s)"
 T = []
 
 def string_generator(size=6, chars=string.ascii_uppercase + string.digits):

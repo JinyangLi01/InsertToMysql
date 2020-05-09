@@ -7,7 +7,7 @@ db = pymysql.connect(host='localhost', port=3306,
 
 cursor = db.cursor()
 
-sql = "INSERT INTO query100(ID, Age, Name, c4, c5, c6, c7, c8, c9, c10) VALUES (%s,%s,%s, %s,%s,%s, %s,%s,%s, %s)"
+sql = "INSERT INTO query1M(ID, Age, Name, c4, c5, c6, c7, c8, c9, c10) VALUES (%s,%s,%s, %s,%s,%s, %s,%s,%s, %s)"
 T = []
 
 def string_generator(size=6, chars=string.ascii_uppercase + string.digits):
