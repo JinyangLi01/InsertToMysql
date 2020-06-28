@@ -13,7 +13,7 @@ T = []
 def string_generator(size=6, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for _ in range(size))
 
-for i in range(1, 1000001):
+for i in range(1, 100001):
     age = random.randint(1,50)
     name = ''.join(random.sample(string.ascii_letters + string.digits, random.randint(1, 30)))
     c4 = ''.join(random.sample(string.ascii_letters + string.digits, random.randint(1, 30)))
